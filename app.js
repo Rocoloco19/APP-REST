@@ -38,7 +38,7 @@ tvshows.route('/tvshows/:id')
   .put(TVShowCtrl.updateTVShow)
   .delete(TVShowCtrl.deleteTVShow);
 
-app.use('/api/', tvshows);
+app.use('/', tvshows);
 
 // Start server
 app.listen(3000, function() {
